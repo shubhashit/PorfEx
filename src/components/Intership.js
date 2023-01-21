@@ -19,6 +19,7 @@ export default function Intership() {
     function navigateToCompany(num){
         var st =``;
     }
+    
     return (
         <div>
             {/* <Navbar></Navbar> */}
@@ -30,12 +31,11 @@ export default function Intership() {
                     </div>
                 </div>
                 <div className='ml-4 navbarOptions'>
+                    <span className='text-black text-2xl mr-3 cursor-pointer' onClick={navigateToHome}>Home</span>                    {/* <span className='text-black text-2xl mr-3'>home</span>
                     <span className='text-black text-2xl mr-3'>home</span>
                     <span className='text-black text-2xl mr-3'>home</span>
                     <span className='text-black text-2xl mr-3'>home</span>
-                    <span className='text-black text-2xl mr-3'>home</span>
-                    <span className='text-black text-2xl mr-3'>home</span>
-                    <span className='text-black text-2xl mr-3'>home</span>
+                    <span className='text-black text-2xl mr-3'>home</span> */}
                 </div>
                 <div className='ham' >
                     {/* eslint-disable-next-line */}
@@ -55,19 +55,12 @@ export default function Intership() {
                 <div className="h-36 flex justify-center">
                     <img className='h-36' src={logo} alt="" />
                 </div>
-                <p className='text-2xl'>INTERSHIP</p>
-                <div className='border border-black mt-2 p-4'>
-                    <div className='flex'>
-                        <h2 className='ml-5'>
-                            about:
-                        </h2>
-
-                    </div>
+                <p className='text-2xl'>INDUSTRIAL TRAINING</p>
+                <div className=' mt-2 p-4'>
                     <p className=''>
-                       	Having trouble getting stipend-based internship? Annoyed with fake intern promises? Here’s a solution.
-                        Prof.eX provides online and offline fixed stipend-based internships that too under zero registration fee under professionals for a wholesome work experience for the path of the professional excellence.
-                        So, connect with us and grab your seat.
-
+                        Tired of paying fee to professors and fake training websites? Aspiring for customised offline training?
+                        Prof.eX conducts training program under which students can connect with professionals that too under customised timing for offline work experience as per your academic calender.
+                        What are you waiting for? Have a hands on easy connect with us for the path of professional excellence.
                     </p>
                 </div>
                 <div className='secGrid grid grid-cols-3 m-2'>
@@ -80,12 +73,12 @@ export default function Intership() {
                         <p>MECHATRONICS</p>
                         <p className='text-sm'>Here we will provide hands on experiences  in the field of mechatronics. Mechatronics is an interdisciplinary field that combines robotics, electronics, computer science, telecommunications, systems, control, and product engineering. It focuses on the integration of mechanical, electrical, and electronic engineering systems.</p>
                     </div>
-                    <div className='border border-black m-4 cursor-pointer' id='courseBoxes1'>
+                    <div className='border border-black m-4 cursor-pointer' id='courseBoxes1' onClick={NavigateToCompany}>
                         <img className='h-40 mb-3' src={skyline} alt="" />
                         <p>SKYLINE INDUSTRIES</p>
                         <p className='text-sm'>Skyline Industries, one of our best partnerships, excels at producing high-quality machine tools, such as drilling and milling equipment, and is the industry leader in producing nuts, bolts, and a variety of other durable products</p>
                     </div>
-                    <div className='border border-black m-4 cursor-pointer' id='courseBoxes1'>
+                    <div className='border border-black m-4 cursor-pointer' id='courseBoxes1' onClick={NavigateToCompany}>
                         <img className='h-40 mb-3' src={tesla} alt="" />
                         {/* Tesla Transformers (Global) Private Limited */}
                         <p>TESLA TRANSFORMER GLOBAL PRIVATE LIMITED</p>

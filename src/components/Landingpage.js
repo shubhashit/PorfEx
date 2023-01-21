@@ -3,12 +3,18 @@ import Mainpage2 from './Mainpage2';
 import Navbar from './Navbar';
 import Course from './Course';
 import Contact from './Contact';
+import logovid from '../logo/logovid.mp4'
 
 export default function Landingpage() {
+  function onSubmit(e){
+      e.preventDefault();
+  }
   return (
     <div className='landingpage'>
           <Navbar></Navbar>
           <Mainpage2></Mainpage2>
+      <video src={logovid} poster="initial_static_picture.jpg" width="480" className='m-auto' controls>
+      </video>
           <Course></Course>
       <div className='m-4'>
         <div className='mb-4 text-xl'><strong>
@@ -16,7 +22,7 @@ export default function Landingpage() {
           ------- REGISTRATION --------
         </strong>
         </div>
-        <form >
+        <form onSubmit={onSubmit}>
           <div className=' p-2 resinputdiv flex '>
             <label htmlFor="exampleInputEmail1" className="form-label flex justify-center items-center" style={{ "width": "20vw" }}>Name</label>
             <input type="email" className="resinput form-control border border-black" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder='Vedant Sign'/>

@@ -17,7 +17,66 @@ export default function Company() {
   }
   return (
     <div className='company'>
-      <div className="tk-blob blolstyle opacity-50 bg-1" style={{ "position": "fixed", "--time": "33s", "--amount": "3" }} >
+
+
+      <div className='pl-1 inline-block'>
+        <div className='ml-4' onClick={navigateToHome}><i className="cursor-pointer fa-xl fa-solid fa-house-user m-2"></i>
+        </div>
+      </div>
+
+        <div className='h-screen flex justify-center items-center text-9xl'>COMING SOON...</div>
+      <div className='m-4'>
+        <div className='mb-4 text-xl'><strong>
+
+          ------- REGISTRATION --------
+        </strong>
+        </div>
+        <form >
+          <div className=' p-2 resinputdiv flex '>
+            <label htmlFor="exampleInputEmail1" className="form-label flex justify-center items-center" style={{ "width": "20vw" }}>Name</label>
+            <input type="email" className="resinput form-control border border-black" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder='Vedant Sign' />
+            {/* <div id="emailHelp" className="form-text">We'll never share your email with anyone else.</div> */}
+          </div>
+          <div className="p-2 resinputdiv flex">
+            <label htmlFor="exampleInputPassword1" className="form-label" style={{ "width": "20vw" }}>College/School Name</label>
+            <input type="text" className="resinput form-control" id="exampleInputPassword1" placeholder='MANIT' />
+          </div>
+          <div className="p-2 resinputdiv flex">
+            <label htmlFor="exampleInputPassword1" className="form-label" style={{ "width": "20vw" }}>Course</label>
+            <input type="text" className="resinput form-control" id="exampleInputPassword1" placeholder='B.tech' />
+          </div>
+          <div className="p-2 resinputdiv flex">
+            <label htmlFor="exampleInputPassword1" className="form-label" style={{ "width": "20vw" }}>Year/class</label>
+            <input type="text" className="resinput form-control" placeholder='1st Year' />
+          </div>
+          <div className="p-2 resinputdiv flex">
+            <label htmlFor="exampleInputPassword1" className="form-label" style={{ "width": "20vw" }}>Email</label>
+            <input type="text" className="resinput form-control" id="exampleInputPassword1" placeholder='vedant@gmail.com' />
+          </div>
+          <div className="p-2 resinputdiv flex">
+            <label htmlFor="exampleInputPassword1" className="form-label" style={{ "width": "20vw" }}>Number</label>
+            <input type="text" className="resinput form-control" id="examp" placeholder='9899433200' />
+          </div>
+          <button type="submit" className="bg-black btn btn-primary">Register</button>
+        </form>
+      </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      {/* <div className="tk-blob blolstyle opacity-50 bg-1" style={{ "position": "fixed", "--time": "33s", "--amount": "3" }} >
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440.7 428.7">
           <path d="M410.6 78.8c36 52.5 36.1 126 19.2 194C412.9 340.7 379 403 330 421.9c-49 19-113.1-5.3-178.6-34C85.8 359.2 18.7 326.1 3.5 276.4-11.7 226.7 25 160.3 71.7 105.3 118.3 50.3 174.8 6.8 239 .7c64.1-6 135.7 25.5 171.6 78.1z"></path>
         </svg>
@@ -44,8 +103,6 @@ export default function Company() {
       </div>
       <div className='navbar border border-black  h-16 opacity-50 flex justify-between  sticky top-0 items-center z-20'>
         <div className='pl-1 inline-block'>
-          {/* <img className='  w-16 aspect-auto opacity-100' src={logo} alt="" />
-         */}
           <div className='ml-4' onClick={navigateToHome}><i className="cursor-pointer fa-xl fa-solid fa-house-user m-2"></i>
           </div>
         </div>
@@ -58,12 +115,6 @@ export default function Company() {
           <span className='text-black text-2xl mr-3'>home</span>
         </div>
         <div className='ham' >
-          {/* eslint-disable-next-line */}
-          {/* <a className="McButton" data="hamburger-menu" >
-          <b id='1'></b>
-          <b id='2' style={{ 'top': '50%' }}></b>
-          <b id='3' style={{ 'top': '100%' }}></b>
-        </a> */}
           <button className="hamburger hamburger--vortex is-active" type="button" >
             <span className="hamburger-box">
               <span className="hamburger-inner"></span>
@@ -105,7 +156,6 @@ export default function Company() {
           <div className=' p-2 flex '>
             <label htmlFor="exampleInputEmail1" className="form-label flex justify-center items-center" style={{ "width": "20vw" }}>Name</label>
             <input type="email" className="form-control border border-black" id="exampleInputEmail1" aria-describedby="emailHelp" />
-            {/* <div id="emailHelp" className="form-text">We'll never share your email with anyone else.</div> */}
           </div>
           <div className="p-2 flex">
             <label htmlFor="exampleInputPassword1" className="form-label" style={{"width":"20vw"}}>College Name</label>
@@ -121,7 +171,7 @@ export default function Company() {
           </div>
           <button type="submit" className="bg-black btn btn-primary">Proceed To Pay</button>
         </form>
-      </div>
+      </div> */}
     </div>
   )
 }

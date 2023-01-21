@@ -21,9 +21,10 @@ export default function Contact() {
             <div className='border border-r-black flex justify-center items-start contactus'>
                 <div className='flex justify-center items-start flex-col p-8 mt-8'>
                     <p className='text-2xl'> <strong> Contact Us </strong> </p>
-                    <div className='ml-4 mt-4'><span>logo   </span>+91 94898492892</div>
-                    <div className='ml-4 mt-4'><span>logo   </span>fakegmail@gmail.com</div>
-                    <div className='ml-4 mt-4'><span>logo   </span>Maulana Azad National Institute of Technology</div>
+                    <div className='ml-4 mt-4'><i class="fa-solid fa-phone"></i>+91 6265602071</div>
+                    <div className='ml-4 mt-4'><i class="fa-solid fa-phone"></i>+91 7354291981</div>
+                    {/* <div className='ml-4 mt-4'><span>logo   </span>fakegmail@gmail.com</div>
+                    <div className='ml-4 mt-4'><span>logo   </span>Maulana Azad National Institute of Technology</div> */}
                 </div>
             </div>
             <div className='border border-r-black flex flex-col writeToUs' >
@@ -34,7 +35,7 @@ export default function Contact() {
                     <div className='ml-4 mt-4 '><input className='border border-b-black  outline-none' type="text" name="Fullname" id="" placeholder='Fullname' /></div>
                     <div className='ml-4 mt-4'><input className='border border-b-black  outline-none' type="text" name="Fullname" id="" placeholder='Fullname' /></div>
                     <div className='ml-4 mt-4 '><input className='border border-b-black outline-none' type="text" name="messege" id="" placeholder='messege' /></div>
-                    <div className='ml-4 mt-4'><input type="submit" value="SBUMIT" /></div>
+                    <div className='ml-4 mt-4'><input type="submit" value="SUBMIT" /></div>
                     </form>
                 </div>
 
