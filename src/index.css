@@ -1,4 +1,12 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 body {
+  /* height: 100%;
+  width: 100%;
+  height: 100vh;
+  width: 100vw; */
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
@@ -10,4 +18,250 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.main {
+
+  /* background: #3266b3de; */
+  /* background: rgb(37, 26, 189);
+  background: linear-gradient(4deg, rgba(40, 69, 88, 1) 0%, rgba(71, 84, 189, 1) 36%, rgba(89, 132, 246, 1) 55%, rgba(0, 212, 255, 1) 100%); */
+  height: calc(100vh - 4rem);
+  background: rgb(253, 255, 171);
+  background: linear-gradient(86deg, rgba(253, 255, 171, 1) 0%, rgba(255, 255, 255, 1) 11%, rgba(193, 255, 252, 1) 19%, rgba(255, 255, 255, 1) 27%, rgba(255, 255, 255, 1) 51%, rgba(255, 255, 255, 1) 75%, rgba(223, 255, 226, 1) 82%, rgba(255, 255, 255, 1) 89%, rgba(198, 198, 255, 1) 100%);
+}
+.contact{
+  display: flex;
+  flex-direction: row;
+}
+.maintext {
+  font-size: 8vw;
+  color: rgb(0, 0, 0);
+  position: absolute;
+}
+
+.blolstyle {
+  /* width: 25vw; */
+  position: absolute;
+}
+
+.blobstyle1 {
+  width: 40vw;
+}
+
+.blobstyle2 {
+  width: 35vw;
+}
+
+.blobstyle3 {
+  width: 30vw;
+}
+
+.bg-1 {
+  width: 20vh;
+  top: 20vh;
+  left: 10vh;
+  --fill: #44c2ff;
+}
+
+.bg-2 {
+  width: 10vh;
+  top: 27vh;
+  left: 21vh;
+  --fill: #bff751;
+}
+
+.bg-3 {
+  width: 15vh;
+  left: 10vh;
+  bottom: 10vh;
+}
+
+.bg-4 {
+  width: 17vh;
+  top: 20vh;
+  right: 10vh;
+  --fill: #f44336;
+}
+
+.bg-5 {
+  width: 13vh;
+  bottom: 20vh;
+  right: 10vh
+}
+
+.navbar {
+  /* background: rgb(40, 69, 88);
+  background: linear-gradient(82deg, rgb(0 31 255) 0%, rgb(83 115 226) 36%, rgba(89, 132, 246, 1) 55%, rgba(0, 212, 255, 1) 100%); */
+  background: none;
+  position: sticky;
+  top: 0;
+  background: rgb(253, 255, 171);
+  background: linear-gradient(86deg, rgba(253, 255, 171, 1) 0%, rgba(255, 255, 255, 1) 11%, rgba(193, 255, 252, 1) 19%, rgba(255, 255, 255, 1) 27%, rgba(255, 255, 255, 1) 51%, rgba(255, 255, 255, 1) 75%, rgba(223, 255, 226, 1) 82%, rgba(255, 255, 255, 1) 89%, rgba(198, 198, 255, 1) 100%);
+}
+
+.ham {
+  display: none;
+}
+
+.course {
+  height: 100vh;
+  /* background-color: #fbfcff; */
+}
+
+.course>p {
+  background-image: linear-gradient(to right, rgb(7 19 40), rgb(31 39 74), #22f, rgb(34, 56, 255), rgb(28 19 76), rgb(13 12 74));
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  font-size: 4rem;
+}
+
+@keyframes wipe-enter {
+  0% {
+    transform: scale(0, .025);
+  }
+
+  50% {
+    transform: scale(1, .025);
+  }
+}
+
+.blobsize {
+  margin: auto;
+  margin-top: 47px;
+  width: 15rem;
+}
+
+.animate__animated.animate__bounce {
+  --animate-duration: 2s;
+}
+
+.contactus,
+.writeToUs {
+  width: 33vw;
+}
+
+.menu {
+  height: 192vh;
+  background: white;
+  width: 100vw;
+  position: absolute;
+  left: 100vw;
+  transform: all;
+  /* display: none; */
+}
+
+@media screen and (max-width: 900px) {
+  .navbarOptions {
+    display: none;
+  }
+
+  .ham {
+    display: inline-block;
+  }
+
+  .courseBox {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .contact {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+  }
+
+  .contactus,
+  .writeToUs {
+    width: 100vw;
+    border-bottom: 2px solid black;
+  }
+
+  .blobstyle1 {
+    width: 50vw;
+  }
+
+  .blobstyle2 {
+    width: 40vw;
+  }
+
+  .blobstyle3 {
+    width: 35vw;
+  }
+
+  .maintext {
+    font-size: 13vw;
+  }
+
+  .secGrid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .contact {
+      display: flex;
+      flex-direction: column;
+      width: 100vw;
+    }
+  .blobstyle1 {
+    width: 80vw;
+  }
+
+  .blobstyle2 {
+    width: 70vw;
+  }
+
+  .blobstyle3 {
+    width: 65vw;
+  }
+
+  .bg-1 {
+    width: 15vh;
+    top: 10vh;
+    left: 5vh;
+    --fill: #44c2ff;
+  }
+
+  .bg-2 {
+    width: 6vh;
+    top: 17vh;
+    left: 16vh;
+    --fill: #bff751;
+  }
+
+  .bg-3 {
+    width: 10vh;
+    left: 5vh;
+    bottom: 5vh;
+  }
+
+  .bg-4 {
+    width: 12vh;
+    top: 10vh;
+    right: 5vh;
+    --fill: #f44336;
+  }
+
+  .bg-5 {
+    width: 8vh;
+    bottom: 10vh;
+    right: 5vh
+  }
+
+}
+
+.mainBox {
+  height: calc(100vh - 2rem);
+}
+
+.company {
+  background: rgb(253, 255, 171);
+  background: linear-gradient(86deg, rgba(253, 255, 171, 1) 0%, rgba(255, 255, 255, 1) 11%, rgba(193, 255, 252, 1) 19%, rgba(255, 255, 255, 1) 27%, rgba(255, 255, 255, 1) 51%, rgba(255, 255, 255, 1) 75%, rgba(223, 255, 226, 1) 82%, rgba(255, 255, 255, 1) 89%, rgba(198, 198, 255, 1) 100%);
+}
+
+.landingpage {
+  background: rgb(253, 255, 171);
+  background: linear-gradient(86deg, rgba(253, 255, 171, 1) 0%, rgba(255, 255, 255, 1) 11%, rgba(193, 255, 252, 1) 19%, rgba(255, 255, 255, 1) 27%, rgba(255, 255, 255, 1) 51%, rgba(255, 255, 255, 1) 75%, rgba(223, 255, 226, 1) 82%, rgba(255, 255, 255, 1) 89%, rgba(198, 198, 255, 1) 100%);
+
 }

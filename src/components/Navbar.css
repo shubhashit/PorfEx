@@ -1,0 +1,33 @@
+.McButton {
+  position: absolute;
+  top: -10%;
+  /* left: 50%; */
+  right:1%;
+  margin-left: 22px;
+  margin-top: 22px;
+  width: 44px;
+  height: 33px;
+  cursor: pointer;
+}
+
+b {
+  position: absolute;
+  left: 0;
+  width: 44px;
+  height: 3px;
+  background-color: white;
+}
+/* #1,#2,#3{
+  tra
+} */
+b:nth-child(1) {
+  top: 0;
+}
+
+b:nth-child(2) {
+  top: 50%;
+}
+
+b:nth-child(3) {
+  top: 100%;
+}
