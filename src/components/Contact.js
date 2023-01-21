@@ -30,7 +30,7 @@ export default function Contact() {
                 <div className='flex justify-center items-start flex-col p-8 mt-8'>
                     <form action="" onSubmit={onSubmit}>
 
-                    <p className='text-2xl'> <strong>write to us</strong> </p>
+                    <p className='text-2xl flex justify-start' > <strong>write to us</strong> </p>
                     <div className='ml-4 mt-4 '><input className='border border-b-black  outline-none' type="text" name="Fullname" id="" placeholder='Fullname' /></div>
                     <div className='ml-4 mt-4'><input className='border border-b-black  outline-none' type="text" name="Fullname" id="" placeholder='Fullname' /></div>
                     <div className='ml-4 mt-4 '><input className='border border-b-black outline-none' type="text" name="messege" id="" placeholder='messege' /></div>
@@ -39,9 +39,9 @@ export default function Contact() {
                 </div>
 
             </div>
-            <div className='border border-black' style={{ "width": "33vw" }}>
+            {/* <div className='border border-black' style={{ "width": "33vw" }}>
 
-            </div>
+            </div> */}
         </div>
     )
 }

@@ -3,6 +3,9 @@ import Course from './Course';
 import logo from '../logo/logo.png';
 import Navbar from './Navbar';
 import { useNavigate } from 'react-router-dom';
+import mega from '../logo/mecha.webp'
+import skyline from '../logo/skyline.webp'
+import tesla from '../logo/tesla.webp'
 
 export default function Intership() {
     const navigate2 = useNavigate();
@@ -61,27 +64,37 @@ export default function Intership() {
 
                     </div>
                     <p className=''>
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ea ut, laudantium rem nemo fuga doloremque similique veritatis. Magnam rerum a, consectetur eaque doloribus dolor ipsum id ut accusantium accusamus voluptas nobis alias eius assumenda veritatis explicabo quae vitae cupiditate perspiciatis unde dolore, cum quibusdam voluptates optio. Cum error illum similique consequatur saepe? Exercitationem enim provident similique nostrum cupiditate sequi non itaque, totam perspiciatis! Mollitia veniam suscipit laborum laboriosam tenetur molestiae labore sunt inventore voluptas sapiente. Culpa obcaecati voluptatem labore libero doloribus maxime autem nobis modi, facilis voluptate porro qui iusto blanditiis aperiam distinctio! Officia quis illo non obcaecati voluptatum debitis.
+                       	Having trouble getting stipend-based internship? Annoyed with fake intern promises? Here’s a solution.
+                        Prof.eX provides online and offline fixed stipend-based internships that too under zero registration fee under professionals for a wholesome work experience for the path of the professional excellence.
+                        So, connect with us and grab your seat.
+
                     </p>
                 </div>
                 <div className='secGrid grid grid-cols-3 m-2'>
 
-                    <div className='border border-black m-4 cursor-pointer' id='courseBoxes1' onClick={NavigateToCompany}>
-                        <img src="" alt="" />
-                        <p className='text-sm'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi iure aut corrupti natus, quas facere amet deserunt? Accusantium expedita voluptatum tempore optio a iure.</p>
+                    <div className='border border-black m-4 cursor-pointer p-2' id='courseBoxes1' onClick={NavigateToCompany}>
+                        <div className='flex justify-center'>
+
+                        <img className='h-40 mb-3' src={mega} alt="" />
+                        </div>
+                        <p>MECHATRONICS</p>
+                        <p className='text-sm'>Here we will provide hands on experiences  in the field of mechatronics. Mechatronics is an interdisciplinary field that combines robotics, electronics, computer science, telecommunications, systems, control, and product engineering. It focuses on the integration of mechanical, electrical, and electronic engineering systems.</p>
                     </div>
                     <div className='border border-black m-4 cursor-pointer' id='courseBoxes1'>
-                        <img src="" alt="" />
-                        <p className='text-sm'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi iure aut corrupti natus, quas facere amet deserunt? Accusantium expedita voluptatum tempore optio a iure.</p>
+                        <img className='h-40 mb-3' src={skyline} alt="" />
+                        <p>SKYLINE INDUSTRIES</p>
+                        <p className='text-sm'>Skyline Industries, one of our best partnerships, excels at producing high-quality machine tools, such as drilling and milling equipment, and is the industry leader in producing nuts, bolts, and a variety of other durable products</p>
                     </div>
                     <div className='border border-black m-4 cursor-pointer' id='courseBoxes1'>
+                        <img className='h-40 mb-3' src={tesla} alt="" />
+                        {/* Tesla Transformers (Global) Private Limited */}
+                        <p>TESLA TRANSFORMER GLOBAL PRIVATE LIMITED</p>
+                        <p className='text-sm'>Tesla Transformers (Global) Private Limited has consolidated its position in the Indian Transformer Industry as a manufacturer of a wide range of transformers, which conform to the quality expectations of both the domestic and the international market.</p>
+                    </div>
+                    {/* <div className='border border-black m-4 cursor-pointer' id='courseBoxes1'>
                         <img src="" alt="" />
                         <p className='text-sm'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi iure aut corrupti natus, quas facere amet deserunt? Accusantium expedita voluptatum tempore optio a iure.</p>
-                    </div>
-                    <div className='border border-black m-4 cursor-pointer' id='courseBoxes1'>
-                        <img src="" alt="" />
-                        <p className='text-sm'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi iure aut corrupti natus, quas facere amet deserunt? Accusantium expedita voluptatum tempore optio a iure.</p>
-                    </div>
+                    </div> */}
                 </div>
             </div>
         </div>

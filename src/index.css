@@ -138,9 +138,11 @@ code {
 
 .contactus,
 .writeToUs {
-  width: 33vw;
+  width: 50vw;
 }
-
+.resinput{
+  background: aliceblue;
+}
 .menu {
   height: 192vh;
   background: white;
@@ -199,6 +201,11 @@ code {
 }
 
 @media screen and (max-width: 500px) {
+  .resinputdiv{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
   .contact {
       display: flex;
       flex-direction: column;
