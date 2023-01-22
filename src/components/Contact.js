@@ -1,7 +1,7 @@
 import { doc, setDoc ,collection} from 'firebase/firestore';
 import React from 'react'
 import '../index.css';
-import { db,storage } from './backend/firebase';
+import { db } from './backend/firebase';
 
 export default function Contact() {
     async function onSubmit(e){
@@ -29,7 +29,7 @@ export default function Contact() {
                 </div>
             </div>
             <div className='border border-r-black flex flex-col writeToUs' >
-                <div className='flex justify-center items-start flex-col p-8 mt-8'>
+                <div className='flex justify-center items-start flex-col pl-4 pr-4 '>
                     <form action="" onSubmit={onSubmit} className='w-full flex justify-center flex-col'>
 
                     <p className='text-2xl flex justify-start m-auto'> <strong>write to us</strong> </p>

@@ -3,8 +3,26 @@ import { useNavigate } from 'react-router-dom';
 import Navbar from '../../Navbar'
 import logo from '../../../logo/logo.png'
 import '../../../index.css'
+import { doc, setDoc, collection } from 'firebase/firestore';
+import { db, } from '../../backend/firebase';
 
 export default function Company() {
+  async function onSubmit(e) {
+    e.preventDefault();
+    console.log('object')
+    console.log(e.target[0].value);
+    console.log(e.target[1].value);
+    console.log(e.target[2].value);
+    // console.log('object');
+    await setDoc(doc(collection(db, "Candidate Info")), {
+      "name": e.target[0].value,
+      "college/school": e.target[1].value,
+      "course": e.target[2].value,
+      "year/class": e.target[3].value,
+      "email": e.target[4].value,
+      "phoneNumber": e.target[5].value
+    })
+  }
   const navigate2 = useNavigate();
   function navigateToHome() {
     console.log('object')
@@ -31,10 +49,10 @@ export default function Company() {
           ------- REGISTRATION --------
         </strong>
         </div>
-        <form >
+        <form onSubmit={onSubmit}>
           <div className=' p-2 resinputdiv flex '>
             <label htmlFor="exampleInputEmail1" className="form-label flex justify-center items-center" style={{ "width": "20vw" }}>Name</label>
-            <input type="email" className="resinput form-control border border-black" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder='Vedant Sign' />
+            <input type="text" className="resinput form-control border border-black" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder='Vedant Sign' />
             {/* <div id="emailHelp" className="form-text">We'll never share your email with anyone else.</div> */}
           </div>
           <div className="p-2 resinputdiv flex">
@@ -51,10 +69,10 @@ export default function Company() {
           </div>
           <div className="p-2 resinputdiv flex">
             <label htmlFor="exampleInputPassword1" className="form-label" style={{ "width": "20vw" }}>Email</label>
-            <input type="text" className="resinput form-control" id="exampleInputPassword1" placeholder='vedant@gmail.com' />
+            <input type="email" className="resinput form-control" id="exampleInputPassword1" placeholder='vedant@gmail.com' />
           </div>
           <div className="p-2 resinputdiv flex">
-            <label htmlFor="exampleInputPassword1" className="form-label" style={{ "width": "20vw" }}>Number</label>
+            <label htmlFor="exampleInputPassword1" className="form-label" style={{ "width": "20vw" }}>Phone Number</label>
             <input type="text" className="resinput form-control" id="examp" placeholder='9899433200' />
           </div>
           <button type="submit" className="bg-black btn btn-primary">Register</button>
