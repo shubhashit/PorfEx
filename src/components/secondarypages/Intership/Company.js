@@ -24,7 +24,7 @@ export default function Company() {
         </div>
       </div>
 
-        <div className='h-screen flex justify-center items-center text-9xl'>COMING SOON...</div>
+        <div className='h-screen flex justify-center items-center text-9xl comingsoon' >COMING SOON...</div>
       <div className='m-4'>
         <div className='mb-4 text-xl'><strong>
 

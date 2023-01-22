@@ -154,13 +154,13 @@ code {
 }
 
 @media screen and (max-width: 900px) {
-  .navbarOptions {
+  /* .navbarOptions {
     display: none;
-  }
+  } */
 
-  .ham {
+  /* .ham {
     display: inline-block;
-  }
+  } */
 
   .courseBox {
     display: flex;
@@ -257,6 +257,9 @@ code {
     width: 5vh;
     bottom: 10vh;
     right: 5vh
+  }
+  .comingsoon{
+    font-size: 5rem;
   }
 
 }
