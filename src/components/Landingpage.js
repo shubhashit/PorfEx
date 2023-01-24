@@ -58,11 +58,11 @@ export default function Landingpage() {
           </div>
           <div className="p-2 resinputdiv flex">
             <label htmlFor="exampleInputPassword1" className="form-label" style={{ "width": "20vw" }}>Email</label>
-            <input type="email" className="resinput form-control" id="exampleInputPassword1" placeholder='vedant@gmail.com' />
+            <input type="email" className="resinput form-control" id="exampleInputPassword1" placeholder='vedant@example.com' />
           </div>
           <div className="p-2 resinputdiv flex">
             <label htmlFor="exampleInputPassword1" className="form-label" style={{ "width": "20vw" }}>Phone Number</label>
-            <input type="text" className="resinput form-control" id="examp" placeholder='9899433200' />
+            <input type="text" className="resinput form-control" id="examp" placeholder='for ex: 3948392584' />
           </div>
           <button type="submit" className="bg-black btn btn-primary">Register</button>
         </form>
